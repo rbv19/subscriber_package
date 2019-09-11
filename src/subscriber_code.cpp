@@ -1,7 +1,18 @@
+#include "publisher_package/topic_name.h"
 
 #include "ros/ros.h"
 
 #include "std_msgs/String.h"
+
+#ifndef TOPIC_NAME_H
+#define TOPIC_NAME_H
+
+#include <string>
+
+std::string topic_name("new_topic_name");
+
+#endif
+
 
 void chatterCallback(const std_msgs::String::ConstPtr& msg)
 {
